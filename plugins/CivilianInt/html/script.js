@@ -27,8 +27,8 @@ window.addEventListener("message", function(event) {
         container.style.display = "block";
 
         setText("dl-fullname", fullName.toUpperCase());
-        setText("dl-state", safeText(data.state));
         setText("license_number", safeText(data.license_number));
+        setText("dl-state", safeText(data.state, "San Andreas").toUpperCase());
         setText("dob", safeText(data.dob));
         setText("exp", safeText(data.exp));
         setText("address", safeText(data.address).toUpperCase());

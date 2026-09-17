@@ -183,6 +183,8 @@ AddEventHandler("showDriverLicense", function(data, id)
         fn = data.fn,
         ln = data.ln,
         address = data.address,
+        state = data.state,
+        exp = data.exp,
         dob = data.dob,
         license_number = data.license_number or "N/A",
         class = data.class,
